@@ -447,7 +447,7 @@ char hooked_GetUserCmd[0x64];
 
 int __stdcall DllMain(void*, int r, void*)
 {
-	if (r == 1 && OpenMutex(1, 1, "/nhmtx"))
+	if (r == 1 /* && OpenMutex(1, 1, "/nhmtx") */)
 	{
 		memset(menu, 0, sizeof(menu));
 
@@ -468,7 +468,8 @@ int __stdcall DllMain(void*, int r, void*)
 			"\x0F\x45?"
 			) - 3), 0x90, 3);
 
-
+		DWORD unused;
+		VirtualProtect(hooked_GetUserCmd, sizeof(hooked_GetUserCmd), PAGE_EXECUTE_READWRITE, &unused);
 
 		trace	= new ITrace();
 		engine	= new IEngine();
