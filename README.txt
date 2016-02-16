@@ -33,7 +33,7 @@ http://youtu.be/gJFNvyrPrwY
 http://youtu.be/bCvgOG1y4-E
 
 Hi! You are looking at the README for NanoHack version 2.0/.1 source. This
-is evolution of NanoHack since december of 2013 and until december 2015.
+is evolution of NanoHack since october of 2013 and until november 2014.
 A lot of things have been changed since the beginning. Here is a list of
 features you probably wouldn't find in many cheats out there (until the
 date this was released) and what makes this cheat special:
